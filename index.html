@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Part 5 ex 4</title>
+    </head>
+
+    <body>
+        <img id="image" onclick="changeImage();" onmouseover="imageEnlarge();" onmouseout="imageReset();" src="laManu.png" />
+        <script>
+            function changeImage() {
+                document.getElementById('image').src = "laManuBach.png";
+            }
+            function imageEnlarge() {
+
+                document.getElementById('image').style.height = '100%';
+                document.getElementById('image').style.width = '100%';
+            }
+            function imageReset() {
+                document.getElementById('image').style.height = '80%';
+                document.getElementById('image').style.width = '80%';
+            }
+        </script>
+    </body>
+
+</html>
